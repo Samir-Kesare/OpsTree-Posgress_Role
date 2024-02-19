@@ -1,5 +1,6 @@
-# Ansible Role to setup SonarQube (Ubuntu)
-![1_rn-sO9oWLn9lYO7jkVO6og](https://github.com/avengers-p7/Documentation/assets/156056344/8f94a6c0-6a68-42ac-8768-aa314e7cbcba)
+# Ansible Role to setup Redis
+![download (1)](https://github.com/CodeOps-Hub/redis-ansiblerole/assets/156056344/88c00e2a-36c4-4087-95e0-c83833747845)
+
 
 
 |   Authors        |  Created on   |  Version   | Last updated by | Last edited on |
@@ -13,7 +14,7 @@
 + [Pre-requisites](#pre-requisites)
 + [Setup Ansible Role](#steps)
 + [Output Verification](#output)
-+ [Redis Setup](#post-installation-setup)
++ [Connect Redis](#post-installation-steps)
 + [Conclusion](#conclusion)
 + [Contact Information](#contact-information)
 + [References](#references)
@@ -26,12 +27,13 @@ This role is designed to automate the installation and configuration of Redis on
 ## Flow Diagram
 
 * This diagram should help you visualize the sequence of tasks in the Ansible role for setting up Redis.
+![Screenshot 2024-02-19 221431](https://github.com/CodeOps-Hub/redis-ansiblerole/assets/156056344/7545e86d-43be-4571-b9b4-ca2e02bf2b00)
 
 
 ***
 ## Pre-requisites
 
-Before using this Ansible role to set up Jenkins, ensure that the following prerequisites are met:
+Before using this Ansible role to set up Redis, ensure that the following prerequisites are met:
 
 1. **Ansible:**
    - Ansible must be installed on the control machine from which you plan to run the playbook. If Ansible is not installed, you can install it using this [link](https://docs.ansible.com/ansible/latest/installation_guide/intro_installation.html) . Version used for POC : ansible 2.10.8
