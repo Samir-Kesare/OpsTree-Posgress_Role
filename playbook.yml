@@ -1,0 +1,7 @@
+---
+- name: Redis Setup
+  hosts: localhost
+  become: yes
+
+  roles:
+    - redis
