@@ -314,7 +314,7 @@ disable_commands:
     state: present
   become: yes
  ```
-5. `configure.yml` : This file is included in the redis/tasks/main.yml file to configure redis, redis service and start redis service
+ 5.  `configure.yml` : This file is included in the redis/tasks/main.yml file to configure redis, redis service and start redis service
    ```yaml
       ---
     - name: Ensure the configuration directories are present
