@@ -472,7 +472,8 @@ ansible-playbook -i aws_ec2.yml playbook.yml
 
 ## Post-Installation Setup
 * Connect to redis using `redis-cli`
-![Screenshot 2024-02-19 220233](https://github.com/CodeOps-Hub/redis-ansiblerole/assets/156056344/1d42ae6e-b031-4fb7-b156-6999ce9da7d0)
+  
+   ![Screenshot 2024-02-19 220233](https://github.com/CodeOps-Hub/redis-ansiblerole/assets/156056344/1d42ae6e-b031-4fb7-b156-6999ce9da7d0)
 
 ***
 ## Conclusion 
