@@ -46,7 +46,7 @@ Ansible is an open-source automation tool that simplifies and accelerates IT inf
 
 
 2. **SSH Access to Target Servers:**
-   - Ensure that you have SSH access to the target servers where SonarQube will be installed.
+   - Ensure that you have SSH access to the target servers where Redis will be installed.
 
 ***
 
@@ -122,7 +122,7 @@ groups:
     - redis
 ```
 **Step 5: Tasks**
-1. `main.yml`: This main.yml file is acting as an orchestrator, importing tasks from the `sonarqube_debian.yml` file. This separation of tasks into different files is a good practice for better organization, especially when dealing with complex configurations or roles.
+1. `main.yml`: This main.yml file is acting as an orchestrator, importing tasks from other task files. This separation of tasks into different files is a good practice for better organization, especially when dealing with complex configurations or roles.
 
 ```yaml
 ---
@@ -353,7 +353,7 @@ We need to create two jinja2 templates :
 * To configure Redis
 * To set up redis Service
 
-1. `redis.conf.j2` teamplate includes parameteters to configure SonarQube database and webserver
+1. `redis.conf.j2` template includes parameteters to configure Redis
 
 ```yaml
 {{ ansible_managed | comment }}
@@ -444,7 +444,7 @@ WantedBy=multi-user.target
 
 **Step 7: Playbook Execution**
 
-* To set up Jenkins on your target servers, you will execute the Ansible playbook using the following command:
+* To set up Redis on your target servers, you will execute the Ansible playbook using the following command:
 
 ```bash
 ansible-playbook -i aws_ec2.yml playbook.yml
